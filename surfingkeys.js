@@ -27,6 +27,14 @@ settings.theme = `
 	--ctp-mantle: #181825;
 	--ctp-crust: #11111b;
 }
+.ace_editor {
+  background: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
+}
+.ace_gutter, .ace_gutter-cell {
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
 
 .sk_theme {
     background: var(--ctp-base);
@@ -98,7 +106,7 @@ body {
 }
 #sk_omnibarSearchArea .prompt, #sk_omnibarSearchArea .resultPage {
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     width: auto;
 }
 #sk_omnibarSearchArea>input {

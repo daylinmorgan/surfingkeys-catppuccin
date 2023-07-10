@@ -485,26 +485,12 @@ div.sk_arrow[dir=up]>div:nth-of-type(2) {
 }
 .ace_marker-layer .ace_selection {
     background: var(--theme-ace-select) !important;
-} `
-;
+}
+`;
 
 api.Hints.style(`
   border: solid 1px #f5e0dc; 
-  color: #f5e0dc;
+  color: ${palette.rosewater};
   background: none; 
-  background-color: #181825;`);
-
-api.Hints.style(`
-  div {
-    border: solid 1px #f5e0dc; 
-    color: var(--ctp-red);
-    background: none; 
-    background-color: #181825;
-  } 
-  div.begin {
-    color: #74c7ec;
-  }`,
-  "text"
-);
-
-
+  background-color: #181825;
+`);

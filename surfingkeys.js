@@ -491,7 +491,6 @@ div.sk_arrow[dir=up]>div:nth-of-type(2) {
 `;
 
 api.Hints.style(`
-  border: solid 1px #f5e0dc; 
   color: ${palette.rosewater};
   background: none; 
   background-color: #181825;

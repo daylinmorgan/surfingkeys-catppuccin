@@ -482,15 +482,15 @@ div.sk_arrow[dir=up]>div:nth-of-type(2) {
 ;
 
 api.Hints.style(`
-  border: solid 2px #f5e0dc; 
+  border: solid 1px #f5e0dc; 
   color: #f5e0dc;
   background: none; 
   background-color: #181825;`);
 
 api.Hints.style(`
   div {
-    border: solid 3px #f5e0dc; 
-    color: #f5e0dc;
+    border: solid 1px #f5e0dc; 
+    color: var(--ctp-red);
     background: none; 
     background-color: #181825;
   } 

@@ -1,32 +1,39 @@
-settings.theme = `
-:root {
-	--ctp-rosewater: #f5e0dc;
-	--ctp-flamingo: #f2cdcd;
-	--ctp-pink: #f5c2e7;
-	--ctp-mauve: #cba6f7;
-	--ctp-red: #f38ba8;
-	--ctp-maroon: #eba0ac;
-	--ctp-peach: #fab387;
-	--ctp-yellow: #f9e2af;
-	--ctp-green: #a6e3a1;
-	--ctp-teal: #94e2d5;
-	--ctp-sky: #89dceb;
-	--ctp-sapphire: #74c7ec;
-	--ctp-blue: #87b0f9;
-	--ctp-lavender: #b4befe;
-	--ctp-text: #c6d0f5;
-	--ctp-subtext1: #b3bcdf;
-	--ctp-subtext0: #a1a8c9;
-	--ctp-overlay2: #8e95b3;
-	--ctp-overlay1: #7b819d;
-	--ctp-overlay0: #696d86;
-	--ctp-surface2: #565970;
-	--ctp-surface1: #43465a;
-	--ctp-surface0: #313244;
-	--ctp-base: #1e1e2e;
-	--ctp-mantle: #181825;
-	--ctp-crust: #11111b;
+palette = {
+	rosewater: "#f5e0dc",
+	flamingo: "#f2cdcd",
+	pink: "#f5c2e7",
+	mauve: "#cba6f7",
+	red: "#f38ba8",
+	maroon: "#eba0ac",
+	peach: "#fab387",
+	yellow: "#f9e2af",
+	green: "#a6e3a1",
+	teal: "#94e2d5",
+	sky: "#89dceb",
+	sapphire: "#74c7ec",
+	blue: "#87b0f9",
+	lavender: "#b4befe",
+	text: "#c6d0f5",
+	subtext1: "#b3bcdf",
+	subtext0: "#a1a8c9",
+	overlay2: "#8e95b3",
+	overlay1: "#7b819d",
+	overlay0: "#696d86",
+	surface2: "#565970",
+	surface1: "#43465a",
+	surface0: "#313244",
+	base: "#1e1e2e",
+	mantle: "#181825",
+	crust: "#11111b",
 }
+
+function convertPaletteToCSS(palette) {
+  return `:root {\n${Object.entries(palette).map(([color, value]) => `\t--ctp-${color}: ${value};`).join('\n')}\n}`;
+}
+
+settings.theme = `
+${convertPaletteToCSS(palette)}
+
 .ace_editor {
   background: var(--ctp-base) !important;
   color: var(--ctp-text) !important;

@@ -491,7 +491,7 @@ div.sk_arrow[dir=up]>div:nth-of-type(2) {
 `;
 
 api.Hints.style(`
-  font-size: 24px;
+  font-size: 16px;
   border: none;
   color: ${palette.rosewater};
   background: none; 

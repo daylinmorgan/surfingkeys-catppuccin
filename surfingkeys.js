@@ -33,6 +33,8 @@ function convertPaletteToCSS(palette) {
     .join("\n")}\n}`;
 }
 
+settings.blacklistPattern = /.*mail.google.com.*|.*inbox.google.com.*|/i;
+
 settings.theme = `
 ${convertPaletteToCSS(palette)}
 
